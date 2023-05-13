@@ -35,3 +35,15 @@ function bubbleSort(arr) {
 }
 
 console.log('Bubble Sort --', bubbleSort([46, 13, 24, 52, 20, 9]));
+
+function insertionSort(arr) {
+	const len = arr.length;
+  for(let i=1; i<len; i++) {
+  	for(let j=i; j>0;j--) {
+    	if(arr[j] < arr[j-1]) swap(arr, j-1, j);
+    }
+  }
+  return arr;
+}
+
+console.log('Insertion Sort --', insertionSort([46, 13, 24, 52, 20, 9]));
