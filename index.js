@@ -27,7 +27,6 @@ console.log('Selection Sort --', selectionSort([13, 46, 24, 52, 20, 9]));
 function bubbleSort(arr) {
   let i = 0;
   for (let i = 0; i < arr.length - 1; i++) {
-    let j = 0;
     for (let j = 0; j < arr.length - i; j++) {
       if (arr[j] > arr[j + 1]) swap(arr, j, j + 1);
     }
